@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model user{
+  email String @id()
+  username String @unique
+  bio String?
+  friend String[]
+  closeFriend String[]
+  tweet tweet[] @relation("userTweet")
+}
+
+model avatar{
+  email String @id()
+  fileAvatar String
+  urlAvatar String
+}
+
+model tweet{
+  id Int @id() @default(autoincrement())
+  author user @relation("userTweet", fields: [authorEmail], references: [email])
+  authorEmail String
+  tweets String
+  createdAt DateTime @default(now())
+  closeFriend Boolean
+}
