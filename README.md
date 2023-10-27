@@ -1,5 +1,5 @@
 # Ristek SosMed Backend
-Ristek SosMed is a simple social media, like twitter, you can CRUD data, CRUD files (image) for avatar, and set visibility to your tweet.
+Ristek SosMed is a simple social media, like twitter, you can CRUD data, CRUD files (image) for avatar, and set visibility to your tweets.
 
 ## Technology Stack
 [![Tech Stacks](https://skillicons.dev/icons?i=nestjs,ts,prisma,postgres)](https://skillicons.dev)
