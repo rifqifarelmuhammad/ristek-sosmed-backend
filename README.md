@@ -1,22 +1,14 @@
 # Ristek SosMed Backend
-Ristek SosMed is a simple social media, like twitter. This web contains CRUD data and CRUD file (image). You can CRUD tweet, CRUD Image for avatar, add friend, add close friend, and set visibility your to tweet.
+Ristek SosMed is a simple social media, like twitter, you can CRUD data, CRUD files (image) for avatar, and set visibility to your tweet.
 
-## Technologies/Tools
-- Nest JS (Backend)
-- Postgres (Database)
+## Technology Stack
+[![Tech Stacks](https://skillicons.dev/icons?i=nestjs,ts,prisma,postgres)](https://skillicons.dev)
+- Cloudinary
 
-## How to Install and Run the Program
-1. Clone this repository to your PC
-2. Access the root folder from your PC
-3. Install all modules needed by the program which are in package.json by typing the following command into your terminal
-```npm install```
-4. Run the program by typing the following command into your terminal
-```npm run start```
-or
-```yarn run start```
+## How to Run the Program
+1. Create .env file (see the env.example file for list of required environment variables)
+2. Run ```npm install``` to install the modules
+3. Run ```npm run start``` or ```yarn start``` to run the program
 
 ## Author
 [Rifqi Farel Muhammad](https://github.com/rifqifarelmuhammad)
-
-## License
-[MIT](https://github.com/rifqifarelmuhammad/ristek-sosmed-backend/blob/main/LICENSE.txt)
